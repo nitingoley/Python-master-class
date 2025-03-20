@@ -43,3 +43,16 @@ elif age<=0:
     print("Invalid age")
 else:
     print("You are young boy!")
+
+"""
+In Python 3.10+ match and case were added.
+"""
+
+value = int(input("Enter a value: "))
+match value:
+    case 1:
+        print("The value is 1!")
+    case _ if value < 1:
+        print("The value is less than 1.")
+    case _ if value > 1:
+        print("The value is greater than 1.")
